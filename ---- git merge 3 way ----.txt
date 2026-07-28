@@ -1,0 +1,37 @@
+---- git merge 3 way ----
+
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> git switch -c gitar-3jalan
+Switched to a new branch 'gitar-3jalan'
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> echo "gitar ini pernah di pakai hitler" > gitar.txt
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> git add .
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> git commit -m "gitar hithel"
+[gitar-3jalan c7155e2] gitar hithel
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 gitar.txt
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> echo "kunci jadi orang sukses itu makan mie sukses" > sukses.docs
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> git add .
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> git commit -m "mie sukses"
+[main 4f0b20e] mie sukses
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sukses.docs
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> git merge gitar-3jalan
+Merge made by the 'ort' strategy.
+ gitar.txt | Bin 0 -> 70 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 gitar.txt
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> git log --graph --oneline -n 6
+*   6862e66 (HEAD -> main) Merge branch 'gitar-3jalan'
+|\  
+| * c7155e2 (gitar-3jalan) gitar hithel
+* | 4f0b20e mie sukses
+|/  
+* d25b93d (fast-merge) barang baru
+* 625990d (origin/main, ganti) Revert "kode html yang rusak(tes)"
+* ef1b171 kode html yang rusak(tes)
+PS C:\Users\spotg\Desktop\CODING\nyoba-git_git> 
+
+
