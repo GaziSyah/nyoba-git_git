@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan T3.2 - Grid Dasar</title>
+  <style>
+    /* DUS BESAR (CONTAINER) */
+    .container {
+      display: grid;                        /* SAKLAR GRID (WAJIB) */
+      grid-template-columns: repeat(1, 10fr 2fr 2fr);/* Bikin 3 kolom sama lebar */
+      gap: 30px;                            /* Jarak antar kartu */
+      
+      background-color: #f1f5f9;
+      border: 2px dashed #94a3b8;
+      padding: 15px;
+    }
+
+    /* KARTU DI DALAMNYA */
+    .kartu {
+      background-color: #0284c7;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="kartu">Kartu 1</div>
+    <div class="kartu">Kartu 2</div>
+    <div class="kartu">Kartu 3</div>
+    <div class="kartu">Kartu 4</div>
+    <div class="kartu">Kartu 5</div>
+    <div class="kartu">Kartu 6</div>
+  </div>
+
+</body>
+</html>

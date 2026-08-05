@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* 1. FLEXBOX FOR NAVBAR (1 Baris Lurus) */
+    .navbar {
+      display: flex;
+      justify-content: space-between; /* Logo kiri, Menu kanan */
+      background: #222;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    /* 2. GRID FOR GALERI (3 Kolom) */
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr 4fr); /* Bagi 3 kolom sama rata */
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .kartu {
+      background: #0284c7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Komponen 1: Flexbox -->
+  <div class="navbar">
+    <a>LOGO</a>
+    <div>
+    <a href="#"> HOME</a> |
+    <a href="#"> TENTANG</a> |
+    <a href="#"> KONTAK</a>
+    </div>
+  </div>
+
+  <!-- Komponen 2: Grid -->
+  <div class="galeri">
+    <div class="kartu">Kartu 1</div>
+    <div class="kartu">Kartu 2</div>
+    <div class="kartu">Kartu 3</div>
+    <div class="kartu">Kartu 4</div>
+    <div class="kartu">Kartu 5</div>
+    <div class="kartu">Kartu 6</div>
+  </div>
+
+</body>
+</html>

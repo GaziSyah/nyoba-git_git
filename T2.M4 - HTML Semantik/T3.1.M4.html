@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan T3.1 - Flexbox Dasar</title>
+  <style>
+    /* DUS BESAR (CONTAINER) */
+    .container {
+      display: flex;                /* SAKLAR FLEXBOX (WAJIB) */
+      flex-direction: row;          /* Susun ke samping */
+      justify-content: space-evenly;  /* Coba ganti ini nanti */
+      align-items: flex-end;          /* Coba ganti ini nanti */
+      gap: 15px;                    /* Jarak antar kotak */
+
+      height: 250px;                /* Tinggi wadah biar align-items kelihatan */
+      background-color: #f1f5f9;
+      border: 2px dashed #94a3b8;
+      padding: 10px;
+    }
+
+    /* KOTAK KECIL DI DALAMNYA */
+    .kotak {
+      background-color: #0284c7;
+      color: white;
+      padding: 20px;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="kotak">Kotak 1</div>
+    <div class="kotak">Kotak 2</div>
+    <div class="kotak">Kotak 3</div>
+  </div>
+
+</body>
+</html>

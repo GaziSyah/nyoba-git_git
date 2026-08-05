@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* 1. FLEXBOX FOR NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      background: #222;
+      color: white;
+      padding: 15px;
+    }
+
+    /* 2. GRID FOR GALERI (Tampilan Laptop / Normal = 3 Kolom) */
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .kartu {
+      background: #0284c7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    /* ==========================================
+       3. RESPONSIVE MEDIA QUERY (Layar HP < 600px)
+       ========================================== */
+    @media (max-width: 600px) {
+      .galeri {
+        grid-template-columns: 1fr;
+        /* Berubah jadi 1 kolom! */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div>LOGO</div>
+    <div>HOME | ABOUT | CONTACT</div>
+  </div>
+
+  <div class="galeri">
+    <div class="kartu">Kartu 1</div>
+    <div class="kartu">Kartu 2</div>
+    <div class="kartu">Kartu 3</div>
+  </div>
+
+</body>
+
+</html>
